@@ -1,0 +1,45 @@
+CREATE SET TABLE FOODMART.trimmed_employee
+     (
+      employee_id INTEGER NOT NULL,
+      full_name VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC NOT NULL,
+      first_name VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC NOT NULL,
+      last_name VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC NOT NULL,
+      position_id INTEGER,
+      position_title VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
+      store_id INTEGER NOT NULL,
+      department_id INTEGER NOT NULL,
+      birth_date DATE FORMAT 'YY/MM/DD' NOT NULL,
+      hire_date TIMESTAMP(6),
+      end_date TIMESTAMP(6),
+      salary DECIMAL(10,4) NOT NULL,
+      supervisor_id INTEGER,
+      education_level VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC NOT NULL,
+      marital_status VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC NOT NULL,
+      gender VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC NOT NULL,
+      management_role VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC);
+
+insert into trimmed_employee select * from employee where employee_id <= 50;
+
+insert into trimmed_employee select * from employee where employee_id=383;
+
+insert into trimmed_employee select * from employee where employee_id=665;
+
+insert into trimmed_employee select * from employee where employee_id=909;
+
+insert into trimmed_employee select * from employee where employee_id=537;
+
+insert into trimmed_employee select * from employee where employee_id=209;
+
+insert into trimmed_employee select * from employee where employee_id=891;
+
+insert into trimmed_employee select * from employee where employee_id=727;
+
+insert into trimmed_employee select * from employee where employee_id=155;
+
+insert into trimmed_employee select * from employee where employee_id=542;
+
+insert into trimmed_employee select * from employee where employee_id=1011;
+
+insert into trimmed_employee select * from employee where employee_id=124;
+
+insert into trimmed_employee select * from employee where employee_id=980;

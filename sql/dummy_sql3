@@ -1,0 +1,5 @@
+Select trim_dum('abc ');
+
+select trim('jhjka');
+
+select first_name from goodnart.table1;

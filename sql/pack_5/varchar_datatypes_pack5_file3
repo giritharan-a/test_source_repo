@@ -1,0 +1,26 @@
+CREATE MULTISET TABLE foodmart.varchar_datatypes_pack5_file3 ,FALLBACK ,
+     NO BEFORE JOURNAL,
+     NO AFTER JOURNAL,
+     CHECKSUM = DEFAULT,
+     DEFAULT MERGEBLOCKRATIO
+     (
+      varchar_datatype1 VARCHAR(20) CHARACTER SET LATIN CASESPECIFIC,
+      varchar_datatype2 VARCHAR(40) CHARACTER SET LATIN CASESPECIFIC,
+      varchar_datatype3 VARCHAR(40) CHARACTER SET LATIN CASESPECIFIC)
+PRIMARY INDEX ( varchar_datatype1 );
+
+INSERT INTO foodmart.varchar_datatypes_pack5_file3 (varchar_datatype1,varchar_datatype2,varchar_datatype3) VALUES (
+'-12114241411111111','-12114241411111111','test');
+INSERT INTO foodmart.varchar_datatypes_pack5_file3 (varchar_datatype1,varchar_datatype2,varchar_datatype3) VALUES (
+'121.123','121.123','test');
+INSERT INTO foodmart.varchar_datatypes_pack5_file3 (varchar_datatype1,varchar_datatype2,varchar_datatype3) VALUES (
+'-121','-121','test');
+INSERT INTO foodmart.varchar_datatypes_pack5_file3 (varchar_datatype1,varchar_datatype2,varchar_datatype3) VALUES (
+'121.121314244','121.121314244','test');
+INSERT INTO foodmart.varchar_datatypes_pack5_file3 (varchar_datatype1,varchar_datatype2,varchar_datatype3) VALUES (
+'121','121','test');
+INSERT INTO foodmart.varchar_datatypes_pack5_file3 (varchar_datatype1,varchar_datatype2,varchar_datatype3) VALUES (
+'-121.123','-121.123','test');
+INSERT INTO foodmart.varchar_datatypes_pack5_file3 (varchar_datatype1,varchar_datatype2,varchar_datatype3) VALUES (
+'-121.124','-121.125','test');
+

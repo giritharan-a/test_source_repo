@@ -1,0 +1,38 @@
+CREATE SET TABLE foodmart.miscellaneous_datatypes
+     (
+      EmployeeNo INTEGER,
+      FirstName VARCHAR(30) CHARACTER SET LATIN CASESPECIFIC,
+      LastName VARCHAR(30) CHARACTER SET LATIN CASESPECIFIC,
+      DOB DATE FORMAT 'YYYY-MM-DD',
+      JoinedDate DATE FORMAT 'DD/MM/YY',
+date_as_varchar varchar(10)
+int_datatype integer,
+varchar_datatype varchar(30),
+decimal_datatype_precision decimal(10,3),
+decimal_datatype decimal,
+byteInt_datatype  byteint,
+bigInt_datatype bigint,
+double_datatype DOUBLE PRECISION,
+number_datatype number,
+smallInt_datatype smallint,
+float_datatype float,
+real_datatype real,
+timestamp_datatype timestamp,
+letter CHAR(1))
+UNIQUE PRIMARY INDEX ( EmployeeNo );
+
+
+insert into foodmart.miscellaneous_datatypes values (1,'Mike','James','1980-01-05','27/03/00','2019-04-23',1,-15,200.993,300.1,12,2500,2500.23,2500.89,12,34,45,'1998-01-01 00:00:00.000000','a');
+insert into foodmart.miscellaneous_datatypes values (2,'Tony','Stark','1980-01-05','01/01/18','2019-04-23',2,122,201.3,301.1,12,2500,2500.23,2500.89,12,34,45,'1994-12-01 00:00:00.000000','b');
+insert into foodmart.miscellaneous_datatypes values (3,'Sherlock','Holmes','1980-01-05','04/04/14','2019-04-23',3,122,201.3,301.1,12,2500,2500.23,2500.89,12,34,45,'1996-01-01 00:00:00.000000','c');
+insert into foodmart.miscellaneous_datatypes values (4,'John','Watson','1980-01-05','27/08/16','2019-04-23',4,122,201.3,301.1,12,2500,2500.23,2500.89,12,34,45,'1998-01-01 00:00:00.000000','d');
+insert into foodmart.miscellaneous_datatypes values (5,'Harry','Potter','1980-07-31',null,'2019-04-23',5,122,201.3,301.1,12,2500,2500.23,2500.89,12,34,45,null,'e');
+insert into foodmart.miscellaneous_datatypes values (6,'Ron','Weasley',null,null,'2019-04-23',6,122,201.3,301.1,12,2500,2500.23,2500.89,12,34,45,null,'f');
+insert into foodmart.miscellaneous_datatypes values (7,null,null,null,null,'2019-04-23',7,122,201.3,301.1,12,2500,2500.23,2500.89,12,34,45,null,'Z');
+insert into foodmart.miscellaneous_datatypes values (8,'Tyrion','Lannister',null,null,'2019-04-23',8,122,201.3,301.1,12,2500,2500.23,2500.89,12,34,45,'A');
+insert into foodmart.miscellaneous_datatypes values (9,'Cercei','Lannister','1980-01-05','26/09/19','2019-04-23',9,122,201.3,301.1,12,2500,2500.23,2500.89,12,34,45,'1996-01-01 00:00:00.000000','B');
+insert into foodmart.miscellaneous_datatypes values (null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null);
+insert into foodmart.miscellaneous_datatypes values (10,'Steve','Rogers','1925-02-11','31/01/41','2019-06-04',12,1278.678,265.345,145,12,2500,2500.23,2500.89,12,34,45,'1998-01-01 00:00:00.000000','D');
+insert into foodmart.miscellaneous_datatypes values (11,'Hermione','Granger','1989-04-23','01/05/11','2019-12-02',22,568.432,985.986,14512,12,2500,2500.23,2500.89,12,34,45,'1998-01-01 00:00:00.000000','E');
+insert into foodmart.miscellaneous_datatypes values (12,'Tom','Riddle','1956-05-02','31/10/90','2018-09-15',300,196067.54891,1092.986,112,12,2500,2500.23,2500.89,12,34,45,'1998-01-01 00:00:00.000000','F');
+

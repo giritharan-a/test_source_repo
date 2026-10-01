@@ -1,0 +1,3 @@
+CREATE TABLE foodmart.trimmed_salary AS foodmart.salary WITH NO DATA;
+
+INSERT INTO foodmart.trimmed_salary AS SELECT * FROM salary where  employee_id <= 20;

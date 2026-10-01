@@ -1,0 +1,3 @@
+Select trim_dum('abc ');
+
+select trim('jhjka');

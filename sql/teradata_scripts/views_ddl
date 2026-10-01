@@ -1,0 +1,12 @@
+
+ create view foodmart.department_view as select * from foodmart.department;
+ 
+ create view foodmart.employee_id_view as select employee_id as a from foodmart.employee where a > 1 and first_name = 'Michael';
+ 
+ create view foodmart.employee_view as select employee_id as a,full_name as b,salary as c from foodmart.employee where a > 1;
+ 
+ create view foodmart.department_id_union_view as select department_id from foodmart.trimmed_salary union select department_id from foodmart.department;
+ 
+ create view foodmart.emplyee_id_view2 as select (a + 1) as b , employee_id as a, 1 as one from foodmart.trimmed_employee where b > 1;
+ 
+ create view department_id_ao_view as select department_id * 2 as department_id from foodmart.trimmed_salary;
