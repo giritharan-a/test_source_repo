@@ -1,0 +1,6 @@
+.LOGON localhost/user1,password1;
+
+SELECT 1;
+
+.LOGOFF;
+.QUIT;

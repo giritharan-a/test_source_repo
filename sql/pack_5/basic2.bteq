@@ -1,0 +1,8 @@
+.LOGON localhost/user1,password1;
+
+SELECT
+    10 + 20 AS TOTAL,
+    'Hello BTEQ' AS MESSAGE;
+
+.LOGOFF;
+.QUIT;
