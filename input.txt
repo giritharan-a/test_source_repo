@@ -1,0 +1,18 @@
+CREATE TABLE foodmart.AlterTableWithDefaultValue
+(
+Id INT,
+CustomerName VARCHAR(100) DEFAULT 'Unknown',
+address varchar(100)
+);
+
+insert into foodmart.AlterTableWithDefaultValue(Id) values(1);
+
+select * from foodmart.AlterTableWithDefaultValue;
+
+ALTER TABLE FoodMart.AlterTableWithDefaultValue
+ADD CONSTRAINT DF_AlterTableWithDefaultValue_address
+DEFAULT 'Unknown_address' FOR address;
+
+insert into foodmart.AlterTableWithDefaultValue(Id) values(1);
+
+select * from foodmart.AlterTableWithDefaultValue;
