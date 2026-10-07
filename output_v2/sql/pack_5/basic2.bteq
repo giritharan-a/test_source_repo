@@ -1,0 +1,9 @@
+CREATE OR REPLACE PROCEDURE dm_schema.basic2_bteq_0()
+BEGIN
+/*.LOGON localhost/user1,password1;*/
+SELECT 10 + 20 AS total, 'Hello BTEQ' AS message;
+/*.LOGOFF;*/
+RETURN;
+EXCEPTION WHEN ERROR THEN
+RAISE USING MESSAGE = CONCAT(@@error.message, '-', @@error.formatted_stack_trace);
+END;
