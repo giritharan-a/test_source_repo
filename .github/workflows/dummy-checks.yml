@@ -1,0 +1,43 @@
+# Save this file in your repo as: .github/workflows/dummy-checks.yml
+name: Dummy Checks
+
+on:
+  pull_request:
+    branches: [main]        # change if your base branch has a different name
+  push:
+    branches: [main]        # also runs on main so the checks show up in branch protection search
+  workflow_dispatch:        # lets you run it manually from the Actions tab
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fake lint
+        run: |
+          echo "Linting code..."
+          sleep 20
+          echo "Lint passed ✅"
+
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fake unit tests
+        run: |
+          echo "Running unit tests..."
+          sleep 40
+          # Put [fail] in the PR title to make this check fail on purpose
+          if [[ "${{ github.event.pull_request.title }}" == *"[fail]"* ]]; then
+            echo "Tests failed ❌ (forced by [fail] in PR title)"
+            exit 1
+          fi
+          echo "All tests passed ✅"
+
+  build:
+    runs-on: ubuntu-latest
+    needs: [lint, unit-tests]   # runs only after the two checks above pass
+    steps:
+      - name: Fake build
+        run: |
+          echo "Building project..."
+          sleep 15
+          echo "Build succeeded ✅"
