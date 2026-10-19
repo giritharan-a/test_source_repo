@@ -1,0 +1,68 @@
+CREATE TABLE IF NOT EXISTS foodmart.varchar_datatypes_pack5_file5 (
+varchar_datatype1 STRING(20),
+varchar_datatype2 STRING(40),
+varchar_datatype3 STRING(40)
+) CLUSTER BY varchar_datatype1;
+
+
+INSERT INTO foodmart.varchar_datatypes_pack5_file5 (varchar_datatype1, varchar_datatype2, varchar_datatype3)
+VALUES ('-12114241411111111', '-12114241411111111', 'test');
+
+
+INSERT INTO foodmart.varchar_datatypes_pack5_file5 (varchar_datatype1, varchar_datatype2, varchar_datatype3)
+VALUES ('121.123', '121.123', 'test');
+
+
+INSERT INTO foodmart.varchar_datatypes_pack5_file5 (varchar_datatype1, varchar_datatype2, varchar_datatype3)
+VALUES ('-121', '-121', 'test');
+
+
+INSERT INTO foodmart.varchar_datatypes_pack5_file5 (varchar_datatype1, varchar_datatype2, varchar_datatype3)
+VALUES ('121.121314244', '121.121314244', 'test');
+
+
+INSERT INTO foodmart.varchar_datatypes_pack5_file5 (varchar_datatype1, varchar_datatype2, varchar_datatype3)
+VALUES ('121', '121', 'test');
+
+
+INSERT INTO foodmart.varchar_datatypes_pack5_file5 (varchar_datatype1, varchar_datatype2, varchar_datatype3)
+VALUES ('-121.123', '-121.123', 'test');
+
+
+INSERT INTO foodmart.varchar_datatypes_pack5_file5 (varchar_datatype1, varchar_datatype2, varchar_datatype3)
+VALUES ('-121.124', '-121.125', 'test');
+
+
+CREATE TABLE IF NOT EXISTS foodmart.varchar_datatypes_pack5_file1 (
+varchar_datatype1 STRING(20),
+varchar_datatype2 STRING(40),
+varchar_datatype3 STRING(40)
+) CLUSTER BY varchar_datatype1;
+
+
+INSERT INTO foodmart.varchar_datatypes_pack5_file1 (varchar_datatype1, varchar_datatype2, varchar_datatype3)
+VALUES ('-12114241411111111', '-12114241411111111', 'test');
+
+
+INSERT INTO foodmart.varchar_datatypes_pack5_file1 (varchar_datatype1, varchar_datatype2, varchar_datatype3)
+VALUES ('121.123', '121.123', 'test');
+
+
+INSERT INTO foodmart.varchar_datatypes_pack5_file1 (varchar_datatype1, varchar_datatype2, varchar_datatype3)
+VALUES ('-121', '-121', 'test');
+
+
+INSERT INTO foodmart.varchar_datatypes_pack5_file1 (varchar_datatype1, varchar_datatype2, varchar_datatype3)
+VALUES ('121.121314244', '121.121314244', 'test');
+
+
+INSERT INTO foodmart.varchar_datatypes_pack5_file1 (varchar_datatype1, varchar_datatype2, varchar_datatype3)
+VALUES ('121', '121', 'test');
+
+
+INSERT INTO foodmart.varchar_datatypes_pack5_file1 (varchar_datatype1, varchar_datatype2, varchar_datatype3)
+VALUES ('-121.123', '-121.123', 'test');
+
+
+INSERT INTO foodmart.varchar_datatypes_pack5_file1 (varchar_datatype1, varchar_datatype2, varchar_datatype3)
+VALUES ('-121.124', '-121.125', 'test');
